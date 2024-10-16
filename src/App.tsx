@@ -12,7 +12,7 @@ const AppContent: React.FC = () => {
   const { backgroundColor } = useBackgroundColor();
 
   return (
-    <div className="flex flex-col min-h-screen w-full bg-cover bg-center bg-fixed"
+    <div className="flex flex-col min-h-screen w-full bg-cover bg-center md:bg-fixed"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/assets/backgrounds/home.jpg)`
 
