@@ -38,9 +38,9 @@ const Navigation: React.FC = () => {
                 <div className="relative">
                     <button
                         onClick={toggleMenu}
-                        className="flex items-center justify-between w-full py-2 px-4 text-green-100"
+                        className="flex items-center justify-between w-full py-2 px-4 text-white"
                     >
-                        <span className="text-2xl font-bold uppercase pr-2">{currentItem.label}</span>
+                        <span className="text-2xl font-righteous uppercase pr-2">{currentItem.label}</span>
                         <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>

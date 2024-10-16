@@ -70,7 +70,7 @@ const ProjectLinks: React.FC<{ githubUrl: string; liveUrl?: string }> = ({ githu
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+                className="bg-green-600 text-white font-bold py-2 px-4 rounded hover:bg-green-500 transition-colors"
             >
                 Live Site
             </a>
@@ -100,7 +100,7 @@ const ProjectPage: React.FC = () => {
         <div className="container mx-auto px-4 py-2">
             <ProjectHeader title={project.title} onBackClick={() => navigate('/')} />
             <ProjectShortDescription description={project.shortDescription} />
-            <div className={`grid gap-8 ${isPortrait ? 'grid-cols-2' : 'grid-cols-1 xl:grid-cols-2'}`}>
+            <div className={`grid gap-8 ${isPortrait ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1 xl:grid-cols-2'}`}>
                 {isPortrait ? (
                     <>
                         <div className="space-y-8">
